@@ -9,11 +9,12 @@ create table VEHICLES
   color VARCHAR2(20),
   chassis_num number(4),
   vehicle_type  VARCHAR2(20),
-  owner_id NUMBER(6)--foreign key
-  inspection_id NUMBER(6)--foreign key
+  owner_id NUMBER(6),--foreign key
+  inspection_id NUMBER(6),--foreign key
 
   constraint vehicle_id_pk primary key (vehicle_id)
 )
+
 alter table VEHICLES
   add constraint vehicle_owner_id_fk foreign key (owner_id)
   references Owner(owner_id)

@@ -7,7 +7,7 @@ create table Road_Accident
     injured_quatity NUMBER(6),
     reason VARCHAR2(40),
     conditions VARCHAR2(40),
-    sum_of_damage sum_of_tax   NUMBER(10,2) not null,
+    sum_of_damage NUMBER(10,2) not null,
     constraint road_accident_id_pk primary key (road_accident_id )
 )
 

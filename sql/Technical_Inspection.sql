@@ -6,7 +6,8 @@ create table Technical_Inspection
     vehicle_id   NUMBER(6),
     sum_of_tax_id NUMBER(6),
     periodicity_id    NUMBER(6),
-    constraint organization_id _pk primary key (organization_id )
+
+    constraint inspection_id_pk primary key (inspection_id )
 )
 alter table Technical_Inspection
   add constraint vehicle_id_fk foreign key (vehicle_id)
