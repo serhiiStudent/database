@@ -7,5 +7,5 @@ create table Owner
   constraint owner_id_pk primary key (owner_id)
 )
 alter table Owner
-  add constraint vehicle_id_fk foreign key (vehicle_id)
-  references Vehicles(vehicle_id)
+  add constraint owner_vehicle_id_fk foreign key (vehicle_id)
+  references Vehicles(vehicle_id);

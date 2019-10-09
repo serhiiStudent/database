@@ -17,8 +17,8 @@ create table VEHICLES
 
 alter table VEHICLES
   add constraint vehicle_owner_id_fk foreign key (owner_id)
-  references Owner(owner_id)
+  references Owner(owner_id);
 
 alter table VEHICLES
   add constraint vehicles_name_not_null
-  check ("vehicle_name" IS NOT NULL);
+  check ("VEHICLE_NAME" IS NOT NULL);-- WORK ONLY WITH CAPS
