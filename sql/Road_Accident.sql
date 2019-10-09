@@ -1,6 +1,6 @@
 create table Road_Accident
 (
-    road_accident_id  NUMBER GENERATED ALWAYS AS IDENTITY,,
+    road_accident_id  NUMBER GENERATED ALWAYS AS IDENTITY,
     accident_date Date,
     accident_type VARCHAR2(40),
     place VARCHAR2(40),
@@ -10,3 +10,4 @@ create table Road_Accident
     sum_of_damage sum_of_tax   NUMBER(10,2) not null,
     constraint road_accident_id_pk primary key (road_accident_id )
 )
+

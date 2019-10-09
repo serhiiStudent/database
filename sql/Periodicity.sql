@@ -5,3 +5,4 @@ create table Periodicity
     periodicity    NUMBER(6)
     constraint periodicity_id_pk primary key (periodicity_id )
 )
+

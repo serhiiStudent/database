@@ -6,3 +6,6 @@ create table Owner
   address VARCHAR2(40),
   constraint owner_id_pk primary key (owner_id)
 )
+alter table Owner
+  add constraint vehicle_id_fk foreign key (vehicle_id)
+  references Vehicles(vehicle_id)
